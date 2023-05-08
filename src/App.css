@@ -1,15 +1,17 @@
 /* Logo Styles */
+:root {
+  --snow: #f6f1f1;
+  --pacific-cayan: #19a7ce;
+  --Cerulean: #146c94;
+  --buenco-ice: 'Bruno Ace', cursive;
+  --ubuntu: 'Ubuntu', sans-serif;
+  --Prucian-blue: #0a364a;
+}
 .logo {
   font-family: 'Bruno Ace', cursive;
   font-size: 24px; /* Adjust as needed */
   font-weight: bold;
   color: #146c94;
-}
-
-/* Body Styles */
-body {
-  background-color: #f6f1f1;
-  color: black;
 }
 
 /* Heading Styles */
@@ -31,27 +33,98 @@ a {
 
 /* Link Styles */
 a {
-  color: #afd3e2;
   text-decoration: none;
 }
 
-a:hover {
-  color: #146c94;
-}
-
 /* Button Styles */
-.button {
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #146c94;
-  color: #f6f1f1;
-  padding: 10px 20px;
-  border-radius: 4px;
-}
-
-.button:hover {
-  background-color: #afd3e2;
-  color: #146c94;
-}
 
 /* Other Styles */
 /* Add any other specific styles for your project here */
+.Nav {
+  padding: 2rem 3rem 0 3rem;
+  background-color: var();
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.navlogo {
+  font-family: var(--buenco-ice);
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--Cerulean);
+}
+.navlogo span {
+  color: #19a7ce;
+}
+.NavLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+.NavLinks a {
+  color: snow;
+  font-size: 1.2rem;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  font-family: var(--ubuntu);
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.NavLinks a:hover {
+  box-shadow: inset 150px 0 0 0 #19a7ce;
+  color: white;
+}
+.NavLinks button {
+  width: 10rem;
+  border-radius: 9px;
+
+  background-color: #146c94;
+}
+.NavLinks .Login-button {
+  color: snow;
+
+  font-weight: 600;
+  background-color: var(--pacific-cayan);
+  font-family: var(--ubuntu);
+}
+.Login-button:hover,
+.Login-button:focus {
+  background-color: var(--Prucian-blue);
+  transform: translateY(-2px);
+
+  box-shadow: 3px 3px 10px 0px var(--Prucian-blue);
+}
+.Hero {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background: url(./assets/cubicBackgroundLight.png);
+  height: 100vh;
+  background-size: cover;
+  flex-direction: row;
+}
+.right-container {
+  padding-right: 2rem;
+}
+.left-container {
+  padding-left: 2rem;
+  width: 50%;
+}
+.left-container h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  color: #0a364a;
+}
+.headding .headerSpan {
+  color: var(--pacific-cayan);
+}
+.headding .headerSpan span {
+  color: #0a364a;
+}
