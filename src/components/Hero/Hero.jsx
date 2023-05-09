@@ -5,8 +5,8 @@ import Libraries from '../../assets/undraw_javascript_frameworks_-8-qpc.svg';
 function Hero() {
   let images = [NextJs, Libraries];
   let Texts = [
-    'Power your web presence with WebT',
-    'Experienced team of developers with a proven track record of success'
+    `Power your web presence with`,
+    'Experienced team of developers with a proven track record of success in '
   ];
   let [currentImage, setCurrentImage] = useState(0);
   let [currentText, SetCurrentText] = useState(0);
@@ -23,11 +23,16 @@ function Hero() {
     <div className="Hero">
       <div className="left-container">
         {Texts.map((text, index) => (
-          <h1 className={index === currentText ? 'active' : ''} key={index}>
-            {text}
+          <h1
+            className={index === currentText ? 'Hero-headding  active' : ''}
+            key={index}
+          >
+            {text} <br />
+            <span> WebT</span>
           </h1>
         ))}
       </div>
+
       <div className="right-container">
         {images.map((image, index) => (
           <img

@@ -1,7 +1,7 @@
 /* Logo Styles */
 :root {
   --snow: #f6f1f1;
-  --pacific-cayan: #19a7ce;
+  --pacific-cayan: #afd3e2;
   --Cerulean: #146c94;
   --buenco-ice: 'Bruno Ace', cursive;
   --ubuntu: 'Ubuntu', sans-serif;
@@ -88,7 +88,7 @@ a {
   background-color: #146c94;
 }
 .NavLinks .Login-button {
-  color: snow;
+  color: #0a364a;
 
   font-weight: 600;
   background-color: var(--pacific-cayan);
@@ -121,14 +121,14 @@ a {
   position: relative;
   width: 70%;
   overflow: hidden;
-  height: 500px;
+  height: 1000px;
 }
 .left-container h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 700;
   color: #0a364a;
   position: absolute;
-  top: 0;
+  top: 25%;
   left: 50px;
   width: 100%;
   height: 100%;
@@ -158,4 +158,17 @@ a {
 }
 .right-container img.active {
   opacity: 1;
+}
+.left-container .Hero-headding {
+  color: var(--Prucian-blue);
+}
+.left-container .Hero-headding span {
+  color: var(--Cerulean);
+}
+.About {
+  height: 100vh;
+  background-image: url(assets/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
